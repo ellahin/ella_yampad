@@ -29,12 +29,25 @@
         functions_layer {
             display-name = "functions";
             bindings = <
-                &to 0            &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp KP_MINUS
+                &to 2            &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp KP_MINUS
                 &kp F7           &kp F8          &kp F9
                 &kp F4           &kp F5          &kp F6            &kp KP_PLUS
                 &kp F1           &kp F2          &kp F3            &kp KP_ENTER        
-                &kp F11          &kp F10       &kp F12
+                &kp F11          &kp F10         &kp F12
             >;
         };
+
+        streaming_layer {
+            display-name = "streaming";
+            bindings = <
+                &to 0            &trans          &trans            &trans
+                &kp F22          &kp F23         &kp F24
+                &kp F19          &kp F20         &kp F21            &trans
+                &kp F16          &kp F17         &kp F18           &trans
+                &kp F13          &kp F14         &kp F15
+            >;
+        };
+
+        
     };
 };
